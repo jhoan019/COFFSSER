@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logo h1 b {
+    color: orange;
+}
+
+.menu {
+    height: 80px;
+
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li {
+    height: 100%;
+    margin: 0% 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.menu-selected:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a {
+    color: #777777;
+    transition: color 300ms;
+}
+
+.menu nav ul li a:hover {
+    color: orange;
+
+}
+
+.menu .text-menu-selected {
+    color: orange;
+}
+
+/*portada inicio*/
+
+.container-cover {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/tiramisu1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*imagen de acerca de la empresa*/
+
+.container-cover1 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image:url(../img/infografia1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*solo hasta aqui*/
+
+/*imagen de acerca del producto*/
+
+.container-cover2 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/tiramisu2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*solo hasta aqui*/
+
+.container-cover::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 166, 0, 0.322);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info-cover {
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-info-cover h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*articulos*/
+
+.container-content {
+    width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px orange;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+article:before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: orange;
+}
+
+article h1 {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+article p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgba(31, 29, 26, 0.322);
+}
+
+article img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*aside de los articulos relacionados*/
+
+.container-aside aside {
+    width: 320px;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 40px;
+
+}
+
+.container-aside aside img {
+    width: 100%;
+}
+
+.container-aside aside h2
+.container-aside aside p {
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
